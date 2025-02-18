@@ -3,7 +3,7 @@ import { ShoppingCart, MapIcon as WhatsappIcon, Star, MapPin, Heart, Wallet, Hom
 
 // Configuration object for easy updates
 const CONFIG = {
-  PHONE_NUMBER: '5511999999999', // Replace with your actual phone number
+  PHONE_NUMBER: '5564999421093', // Replace with your actual phone number
   DELIVERY: {
     MIN_ORDER_FREE_DELIVERY: 28, // Minimum order amount for free delivery
     FEE: 9, // Standard delivery fee
@@ -33,32 +33,25 @@ interface Address {
 const products: Product[] = [
   {
     id: 1,
-    name: "Bolo de Chocolate",
+    name: "Bolo de Brigadeiro",
     price: 14,
     image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500&q=80",
-    description: "Delicioso bolo de chocolate com cobertura cremosa"
+    description: "Delicioso bolo de pote sabor Brigadeiro irresistível"
   },
   {
     id: 2,
-    name: "Bolo de Morango",
+    name: "Bolo de Prestigio",
     price: 14,
     image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&q=80",
-    description: "Bolo cremoso com pedaços de morango fresco"
+    description: "Bolo Sabor prestigio com pedaços de coco fresco"
   },
   {
     id: 3,
-    name: "Bolo de Ninho",
+    name: "Bolo de Ninho Com Nutella",
     price: 14,
     image: "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=500&q=80",
-    description: "Bolo de leite Ninho com cobertura especial"
+    description: "Bolo de leite Ninho com Nutella"
   },
-  {
-    id: 4,
-    name: "Bolo de Oreo",
-    price: 14,
-    image: "https://images.unsplash.com/photo-1587668178277-295251f900ce?w=500&q=80",
-    description: "Bolo cremoso com pedaços de Oreo"
-  }
 ];
 
 function App() {
