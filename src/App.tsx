@@ -430,7 +430,7 @@ Indicado por: ${affiliateName}${paymentInfo}${deliveryInfo}`;
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold mb-4">{CONFIG.STORE_NAME}</h2>
           <p className="mb-4">Bolos artesanais feitos com amor ❤️</p>
-          <p className="text-gray-400">© 2024 {CONFIG.STORE_NAME}. Todos os direitos reservados.</p>
+          <p className="text-gray-400">© 2025 {CONFIG.STORE_NAME}.</p>
         </div>
       </footer>
     </div>
