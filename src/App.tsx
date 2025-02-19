@@ -33,25 +33,32 @@ interface Address {
 const products: Product[] = [
   {
     id: 1,
-    name: "Bolo de Brigadeiro",
+    name: "Bolo de Chocolate",
     price: 14,
     image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500&q=80",
-    description: "Delicioso bolo de pote sabor Brigadeiro irresistível"
+    description: "Delicioso bolo de chocolate com cobertura cremosa"
   },
   {
     id: 2,
-    name: "Bolo de Prestigio",
+    name: "Bolo de Morango",
     price: 14,
     image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&q=80",
-    description: "Bolo Sabor prestigio com pedaços de coco fresco"
+    description: "Bolo cremoso com pedaços de morango fresco"
   },
   {
     id: 3,
-    name: "Bolo de Ninho Com Nutella",
+    name: "Bolo de Ninho",
     price: 14,
     image: "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=500&q=80",
-    description: "Bolo de leite Ninho com Nutella"
+    description: "Bolo de leite Ninho com cobertura especial"
   },
+  {
+    id: 4,
+    name: "Bolo de Oreo",
+    price: 14,
+    image: "https://images.unsplash.com/photo-1587668178277-295251f900ce?w=500&q=80",
+    description: "Bolo cremoso com pedaços de Oreo"
+  }
 ];
 
 function App() {
@@ -177,18 +184,9 @@ Indicado por: ${affiliateName}${paymentInfo}${deliveryInfo}`;
       {/* Main Content */}
       <main className="container mx-auto p-4">
         <div className="mb-8">
-          <h2 className="text-3xl font-bold text-gray-800 mb-2">Nossos Bolos de Pote</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-2">Bolos de Pote</h2>
+          
         </div>
-
-        {/* Info Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white p-6 rounded-lg shadow flex items-center space-x-4">
-            <MapPin className="w-8 h-8 text-pink-600" />
-            <div>
-              <h3 className="font-semibold">Entrega Grátis</h3>
-              <p className="text-sm text-gray-600">Em pedidos acima de R$ {CONFIG.DELIVERY.MIN_ORDER_FREE_DELIVERY.toFixed(2)}</p>
-            </div>
-          </div>
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
@@ -408,12 +406,38 @@ Indicado por: ${affiliateName}${paymentInfo}${deliveryInfo}`;
           </div>
         )}
 
+        {/* Info Section */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-white p-6 rounded-lg shadow flex items-center space-x-4">
+            <MapPin className="w-8 h-8 text-pink-600" />
+            <div>
+              <h3 className="font-semibold">Entrega Grátis</h3>
+              <p className="text-sm text-gray-600">Em pedidos acima de R$ {CONFIG.DELIVERY.MIN_ORDER_FREE_DELIVERY.toFixed(2)}</p>
+            </div>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow flex items-center space-x-4">
+            <Heart className="w-8 h-8 text-pink-600" />
+            <div>
+              <h3 className="font-semibold">Feito com Amor</h3>
+              <p className="text-sm text-gray-600">Bolos artesanais deliciosos</p>
+            </div>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow flex items-center space-x-4">
+            <Star className="w-8 h-8 text-pink-600" />
+            <div>
+              <h3 className="font-semibold">Qualidade Garantida</h3>
+              <p className="text-sm text-gray-600">Satisfação garantida</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
       {/* Footer */}
       <footer className="bg-gray-800 text-white mt-12 py-8">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold mb-4">{CONFIG.STORE_NAME}</h2>
           <p className="mb-4">Bolos artesanais feitos com amor ❤️</p>
-          <p className="text-gray-400">© 2025</p>
+          <p className="text-gray-400">© 2025 Todos os direitos reservados.</p>
         </div>
       </footer>
     </div>
