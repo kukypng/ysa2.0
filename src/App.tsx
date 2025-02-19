@@ -178,8 +178,17 @@ Indicado por: ${affiliateName}${paymentInfo}${deliveryInfo}`;
       <main className="container mx-auto p-4">
         <div className="mb-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-2">Nossos Bolos de Pote</h2>
-          <p className="text-gray-600">Deliciosos bolos artesanais feitos com muito amor ❤️</p>
         </div>
+
+        {/* Info Section */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-white p-6 rounded-lg shadow flex items-center space-x-4">
+            <MapPin className="w-8 h-8 text-pink-600" />
+            <div>
+              <h3 className="font-semibold">Entrega Grátis</h3>
+              <p className="text-sm text-gray-600">Em pedidos acima de R$ {CONFIG.DELIVERY.MIN_ORDER_FREE_DELIVERY.toFixed(2)}</p>
+            </div>
+          </div>
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
@@ -399,30 +408,8 @@ Indicado por: ${affiliateName}${paymentInfo}${deliveryInfo}`;
           </div>
         )}
 
-        {/* Info Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white p-6 rounded-lg shadow flex items-center space-x-4">
-            <MapPin className="w-8 h-8 text-pink-600" />
-            <div>
-              <h3 className="font-semibold">Entrega Grátis</h3>
-              <p className="text-sm text-gray-600">Em pedidos acima de R$ {CONFIG.DELIVERY.MIN_ORDER_FREE_DELIVERY.toFixed(2)}</p>
-            </div>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow flex items-center space-x-4">
-            <Heart className="w-8 h-8 text-pink-600" />
-            <div>
-              <h3 className="font-semibold">Feito com Amor</h3>
-              <p className="text-sm text-gray-600">Bolos artesanais deliciosos</p>
-            </div>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow flex items-center space-x-4">
-            <Star className="w-8 h-8 text-pink-600" />
-            <div>
-              <h3 className="font-semibold">Qualidade Garantida</h3>
-              <p className="text-sm text-gray-600">Satisfação garantida</p>
-            </div>
-          </div>
-        </div>
+        
+        
       </main>
 
       {/* Footer */}
@@ -430,7 +417,7 @@ Indicado por: ${affiliateName}${paymentInfo}${deliveryInfo}`;
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold mb-4">{CONFIG.STORE_NAME}</h2>
           <p className="mb-4">Bolos artesanais feitos com amor ❤️</p>
-          <p className="text-gray-400">© 2025 {CONFIG.STORE_NAME}.</p>
+          <p className="text-gray-400">© 2025</p>
         </div>
       </footer>
     </div>
