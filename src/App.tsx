@@ -33,17 +33,17 @@ interface Address {
 const products: Product[] = [
   {
     id: 1,
-    name: "Bolo de Chocolate",
+    name: "Bolo de Brigadeiro",
     price: 14,
     image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500&q=80",
-    description: "Delicioso bolo de chocolate com cobertura cremosa"
+    description: "Delicioso bolo de Brigadeiro com sabor irresistível cremosa"
   },
   {
     id: 2,
-    name: "Bolo de Morango",
+    name: "Bolo de Prestígio",
     price: 14,
     image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&q=80",
-    description: "Bolo cremoso com pedaços de morango fresco"
+    description: "Bolo cremoso com pedaços de coco fresco"
   },
   {
     id: 3,
@@ -52,13 +52,6 @@ const products: Product[] = [
     image: "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=500&q=80",
     description: "Bolo de leite Ninho com cobertura especial"
   },
-  {
-    id: 4,
-    name: "Bolo de Oreo",
-    price: 14,
-    image: "https://images.unsplash.com/photo-1587668178277-295251f900ce?w=500&q=80",
-    description: "Bolo cremoso com pedaços de Oreo"
-  }
 ];
 
 function App() {
@@ -187,6 +180,15 @@ Indicado por: ${affiliateName}${paymentInfo}${deliveryInfo}`;
           <h2 className="text-3xl font-bold text-gray-800 mb-2">Bolos de Pote</h2>
           
         </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-white p-6 rounded-lg shadow flex items-center space-x-4">
+            <MapPin className="w-8 h-8 text-pink-600" />
+            <div>
+              <h3 className="font-semibold">Entrega Grátis</h3>
+              <p className="text-sm text-gray-600">Em pedidos acima de R$ {CONFIG.DELIVERY.MIN_ORDER_FREE_DELIVERY.toFixed(2)}</p>
+            </div>
+          </div>
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
