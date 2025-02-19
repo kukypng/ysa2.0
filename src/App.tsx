@@ -180,15 +180,6 @@ Indicado por: ${affiliateName}${paymentInfo}${deliveryInfo}`;
           <h2 className="text-3xl font-bold text-gray-800 mb-2">Bolos de Pote</h2>
           
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white p-6 rounded-lg shadow flex items-center space-x-4">
-            <MapPin className="w-8 h-8 text-pink-600" />
-            <div>
-              <h3 className="font-semibold">Entrega Grátis</h3>
-              <p className="text-sm text-gray-600">Em pedidos acima de R$ {CONFIG.DELIVERY.MIN_ORDER_FREE_DELIVERY.toFixed(2)}</p>
-            </div>
-          </div>
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
