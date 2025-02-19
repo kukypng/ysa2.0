@@ -408,10 +408,6 @@ Indicado por: ${affiliateName}${paymentInfo}${deliveryInfo}`;
           </div>
         )}
 
-        
-        
-      </main>
-
       {/* Footer */}
       <footer className="bg-gray-800 text-white mt-12 py-8">
         <div className="container mx-auto px-4 text-center">
